@@ -6,3 +6,11 @@
 # Break this task up into a couple of steps of pseudocode
 # and write the pseudocode below in code comments.
 # You don't need to write any functional code, just map out the steps.
+
+# Creation of ad for new kittens
+
+# Create list for names of all the kittens
+
+# Ensure that each kitten is documented as being cute
+
+# Showcase that each kitten is ready for adoption
