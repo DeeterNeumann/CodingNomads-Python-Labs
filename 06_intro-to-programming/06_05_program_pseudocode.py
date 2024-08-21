@@ -6,3 +6,26 @@
 # You can also add real Python code after learning the necessary concepts.
 # For now, just practice breaking larger tasks into smaller steps
 # and writing out your thoughts in pseudocode.
+
+# Sorting and categorizing emails
+
+# Open Google Chrome web browser
+
+# Go to email website
+
+# Login to email account
+
+# Open inbox
+
+# For each email in the inbox
+    # Look at subject
+    # if subject contains: "Statement"
+        # File in bills
+    # elif: "Message"
+        # File in follow-up
+    # else:
+        # Move to trash
+
+# Sign-out of email
+
+# Close browser
