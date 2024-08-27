@@ -8,11 +8,12 @@ voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
 mollit anim id est laborum."""
 
-vowel = ["a" , "e" , "i" , "o" , "u" , "A" , "E" , "I" , "O" , "U"]
+vowel = ["a" , "e" , "i" , "o", "u"]
 total_num_vowels = 0
 
-for vowel in lorem_ipsum:
-    total_num_vowels += 1
+for char in lorem_ipsum.lower():
+    if char in vowel:
+        total_num_vowels += 1
 
 print(total_num_vowels)
 
