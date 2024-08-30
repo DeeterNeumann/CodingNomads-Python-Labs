@@ -6,7 +6,11 @@
 # - If the number is divisible by both 3 and 5, write `FizzBuzz` instead of the number
 
 
-n = 15
+# num = print(input("Please enter a number: "))
+
+# n = int(num)
+
+n = 27
 
 numbers = list(range(1, n + 1))
 print(numbers)
@@ -18,4 +22,4 @@ elif n % 3 == 0:
 elif n % 5 == 0:
     print("Buzz")
 else:
-    print("Please enter a different number!")
+    print("Not divisible by either 3 or 5.")
