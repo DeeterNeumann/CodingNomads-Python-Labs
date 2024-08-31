@@ -6,11 +6,7 @@
 # - If the number is divisible by both 3 and 5, write `FizzBuzz` instead of the number
 
 
-# num = print(input("Please enter a number: "))
-
-# n = int(num)
-
-n = 27
+n = int(input("Please enter a number: "))
 
 numbers = list(range(1, n + 1))
 print(numbers)
