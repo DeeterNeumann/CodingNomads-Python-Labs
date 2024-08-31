@@ -8,3 +8,14 @@
 # for example flags and conditional statements.
 
 filename = "operators.pdf"
+
+file_ext = filename.split(".")
+
+for extension in file_ext:
+    extension = file_ext[1]
+    if extension == "pdf":
+        print("It's a pdf!")
+        break
+    else:
+        print("Not a pdf!")
+        break
