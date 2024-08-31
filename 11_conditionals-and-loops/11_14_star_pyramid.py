@@ -22,3 +22,10 @@
 # * * *
 #
 # HINT: Think of nested for loops!
+
+n = int(input("Enter a number: "))
+
+stars = list(range(1, n + 1))
+
+for i in stars:
+    print("* " * i)
