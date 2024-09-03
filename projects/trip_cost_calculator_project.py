@@ -6,8 +6,6 @@
 # Calculate the cost of the trip and display it to the user in the console. \
 # Apply some of the string formatting tricks that you learned about in this course section.
 
-import math
-
 distance = int(input("How many kilometers do you plan to drive?: "))
 lpk = int(input("How many liters-per-kilometer does the car get that you plan on taking on the drive?: "))
 price = float(input("What is the current cost of fuel (per liter)?: "))
