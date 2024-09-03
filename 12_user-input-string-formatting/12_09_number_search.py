@@ -4,12 +4,11 @@
 
 number = int(input("Please enter a number between 0 and 1,000,000,000: "))
 
-n = 0
-
-while n != number:
-    n += 1
-    break
-
-print(number)
-
-# Need to put upper and lower bound on this code given the range the user was given?
+if number < 0 or number > 1000000000:
+    print("Error. The number entered must be between 0 and 1,000,000,000.")
+else:
+    n = 0
+    while n != number:
+        n += 1
+    print(n)
+    
