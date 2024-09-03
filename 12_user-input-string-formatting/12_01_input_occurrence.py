@@ -4,3 +4,10 @@
 # String input: hello world
 # Letter input: o
 # Result: 4
+
+str = input("Please type a phrase: ")
+letter = input("Please type any letter found in the phrase you just entered: ")
+
+result = str.index(letter)
+
+print("Result:", result)
