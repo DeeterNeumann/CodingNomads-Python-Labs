@@ -1,6 +1,8 @@
 # Use the built-in `platform` module to print out the following info:
 
 placeholder = "remove me :)"
+
+import platform
  
 print(f"{'Platform:':>10} {placeholder}",)  # platform.platform()
 print(f"{'Compiler:':>10} {placeholder}",)  # platform.python_compiler()
