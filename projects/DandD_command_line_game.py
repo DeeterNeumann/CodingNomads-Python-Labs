@@ -30,10 +30,10 @@ while dragon_dead == False:
     while player_pos == "l":
         ## When in the seemingly empty room, they can choose to look around. If they do so, they will find a sword. They can choose to take it or leave it.
         if has_sword:
-            return_to_corridor = input("There is nothing left to find in this room. To go back into the corridor, enter return: \n")
-            if return_to_corridor == "return":
-                player_pos = "c"
-        if player_pos == "l":
+            print("There is nothing left to find in this room, and you return to the corridor.")
+            player_pos = "c"
+            continue
+        elif player_pos == "l":
             look_around = input("\nDo you want to further explore the dark, empty room? yes or no: \n")
             if look_around == "yes":
                 take_sword = input("\nYou have found a sword! Do you wish to take the sword? yes or no: \n")
