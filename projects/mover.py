@@ -12,3 +12,15 @@
 # Create a new path for each file
 
 # Move the screenshot there
+
+import pathlib
+
+drneu = pathlib.Path("/Users/drneu")
+
+new_path = pathlib.Path("/Users/drneu/screenshots")
+new_path.mkdir(exist_ok=True)
+
+for filepath in drneu.iterdir():
+    if filepath.suffix == ".png":
+        new_filepath = new_path.joinpath(filepath.name)
+        filepath.replace(new_filepath)
