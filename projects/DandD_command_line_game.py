@@ -18,7 +18,7 @@ while dragon_dead == False:
 ## Present them with a choice between two doors.
     player_pos = "c"
     while player_pos == "c":
-        door_choice = input("As you enter into the dungeon and navigate its dark corridor,\nyou come accross two doors. Which will you enter? left or right: ")
+        door_choice = input("\nAs you enter into the dungeon and navigate its dark corridor,\nyou come accross two doors. Which will you enter? left or right: ")
         ## If they choose the left door, they'll see an empty room
         if door_choice == "left":
             player_pos = "l"
@@ -29,6 +29,10 @@ while dragon_dead == False:
             print("\nYou have entered into the lair of an ornery dragon!\n")
     while player_pos == "l":
         ## When in the seemingly empty room, they can choose to look around. If they do so, they will find a sword. They can choose to take it or leave it.
+        if has_sword:
+            return_to_corridor = input("There is nothing left to find in this room. To go back into the corridor, enter return: \n")
+            if return_to_corridor == "return":
+                player_pos = "c"
         if player_pos == "l":
             look_around = input("\nDo you want to further explore the dark, empty room? yes or no: \n")
             if look_around == "yes":
@@ -41,8 +45,6 @@ while dragon_dead == False:
             left_to_hall = input("\nDo you want to remain in this room or return to the corridor? Please enter stay or return: \n")
             if left_to_hall == "return":
                 player_pos = "c"
-            elif left_to_hall == "stay" and has_sword:
-                print("You have found everything in this room.")
             else:
                 print("\nWell, this is fun.\n")
                 continue
@@ -63,7 +65,5 @@ while dragon_dead == False:
 
 print("\nYou found the sword and chose to fight the dragon, which you successfully slayed. Congratulations - you win!\n")
 
-# sword == True can be replaced by just sword
-# sword == False can be replaced by just not sword
-
- # notice that if I take the sword, I can still look for and take the sword. Maybe you could use the sword flag to display a message that we already found the sword when in this situation
+# has_sword == True can be replaced by just has_sword
+# has_sword == False can be replaced by just not has_sword
